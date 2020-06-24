@@ -3,7 +3,7 @@ const works = document.querySelectorAll(".jumbotron")
 works.forEach((work, index) => {
     if (work.querySelectorAll(".sneakpeak").length > 0) {
         work.innerHTML = work.innerHTML.replace(`<hr class="my4">`, `<hr class="my4"><button type="button" class="btn btn-warning hideshot" style="display: none;" onclick="hideshot(${index})">Hide screenshots</button><button type="button" class="btn btn-primary showshot" onclick="showshot(${index})">Show screenshots</button><br><br>`)
-        work.innerHTML = work.innerHTML.replace(`<p class="lead">Technologies used : </p>`, `<button type="button" class="btn btn-warning hideshot" style="display: none;" onclick="hideshot(${index})">Hide screenshots</button><p class="lead">Technologies used :</p>`)
+        work.innerHTML = work.innerHTML.replace(`<p class="lead">Technologies used : </p>`, `<button type="button" class="btn btn-warning hideshot" style="display: none;" onclick="hideshot(${index}, true)">Hide screenshots</button><p class="lead">Technologies used :</p>`)
     }
     work.id = `project${index}`
 })
@@ -18,7 +18,7 @@ function showshot(index){
     })
 }
 
-function hideshot(index){
+function hideshot(index, scrollback=false){
     works[index].querySelectorAll(".sneakpeak").forEach(img => {
         img.style = "display: none;"
     })
@@ -26,5 +26,7 @@ function hideshot(index){
     works[index].querySelectorAll(".hideshot").forEach(button => {
         button.style = "display: none;"
     })
-    window.location = `#project${index}`
+    if (scrollback) {
+        window.location = `#project${index}`   
+    }
 }
