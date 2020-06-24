@@ -5,7 +5,7 @@ works.forEach((work, index) => {
         work.innerHTML = work.innerHTML.replace(`<hr class="my4">`, `<hr class="my4"><button type="button" class="btn btn-warning hideshot" style="display: none;" onclick="hideshot(${index})">Hide screenshots</button><button type="button" class="btn btn-primary showshot" onclick="showshot(${index})">Show screenshots</button><br><br>`)
         work.innerHTML = work.innerHTML.replace(`<p class="lead">Technologies used : </p>`, `<button type="button" class="btn btn-warning hideshot" style="display: none;" onclick="hideshot(${index})">Hide screenshots</button><p class="lead">Technologies used :</p>`)
     }
-    
+    work.id = `project${index}`
 })
 
 function showshot(index){
@@ -26,4 +26,5 @@ function hideshot(index){
     works[index].querySelectorAll(".hideshot").forEach(button => {
         button.style = "display: none;"
     })
+    window.location = `#project${index}`
 }
