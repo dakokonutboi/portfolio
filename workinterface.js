@@ -6,6 +6,7 @@ function showScreenshots(project){
 }
 
 function hideScreenshots(project){
+    window.location = "#project" + project
     const images = document.getElementById("imagesproject" + project)
     const showImagesButton = document.getElementById("showimagesproject" + project)
     images.style = "display: none;"
