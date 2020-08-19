@@ -1,0 +1,100 @@
+{
+    "skillset": [
+        {
+            "name": "Programming and markup languages",
+            "list": [
+                "Javascript : Advanced",
+                "Python 3 : Advanced",
+                "PHP : Advanced",
+                "HTML : Advanced",
+                "MySQL : Intermediate",
+                "bash : Intermediate",
+                "Powershell : Intermediate",
+                "CSS : Intermediate",
+                "LaTeX : Basic",
+                "C# : Basic",
+                "C++ : Basic",
+                "Basic : Basic"   
+            ]
+        },
+        {
+            "name": "Tools",
+            "list": [
+                "git/versioncontrol : Advanced",
+                "GitHub : Advanced",
+                "VisualStudio Code : Advanced",
+                "Adobe Suite (Photoshop, PremierePro, AfterEffects, InDesign, MediaEncoder) : Advanced",
+                "MySQL Workbench : Intermediate",
+                "PHPMyAdmin : Intermediate",
+                "Docker : Intermediate"
+            ]
+        },
+        {
+            "name": "Database systems",
+            "list": [
+                "MongoDB : Advanced",
+                "MySQL : Advanced"
+            ]
+        },
+        {
+            "name": "Cloud providers",
+            "list": [
+                "Heroku : Advanced",
+                "MongoDB Atlas : Advanced",
+                "AWS : Intermediate"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Léon Continue!",
+            "description": "Léon Continue is an e-learning platform that allows teachers to share documents and exams with their students in an easy and organised way.",
+            "images": ["/img/leoncontinue/Login Page.png", "/img/leoncontinue/Dashboard.png", "/img/leoncontinue/Courses.png", "/img/leoncontinue/Textbooks.png"],
+            "opensource": false,
+            "source": null
+        },
+        {
+            "name": "Loqman",
+            "description": "Loqman is an educator management system, meaning it allows its users to manage students that are currently learning so as to become educators. It is currently used in an Islamic education program in Morocco.",
+            "images": ["/img/loqman/Login.png", "/img/loqman/Dashboard.png", "/img/loqman/Members.png", "/img/loqman/MemberPage.png"],
+            "opensource": false,
+            "source": null
+        },
+        {
+            "name": "hayai",
+            "description": "hayai is a volatile messaging service. Meaning that you create a chatroom, chat, and then when some time passes, everything is gone!",
+            "images": ["/img/hayai/Dashboard.png", "/img/hayai/Create.png", "/img/hayai/Messaging.png"],
+            "opensource": true,
+            "source": "https://github.com/dakokonutboi/hayai"
+        },
+        {
+            "name": "HamidBot",
+            "description": "HamidBot is a Discord bot I made for some friends. The bot allows them to play minigames, get definitions from Urban dictionary and manage user permissions on Discord.",
+            "images": [],
+            "opensource": false,
+            "source": null
+        },
+        {
+            "name": "MineBot",
+            "description": "MineBot is a small Discord bot I made for some friends that randomly generates a Minecraft entity (or Monster).",
+            "images": [],
+            "opensource": true,
+            "source": "https://github.com/dakokonutboi/minebot"
+        },
+        {
+            "name": "Telegram Notificator",
+            "description": "Telegram Notificator is a RESTful API that allows developers to send notifications (In the form of messages) to their users on Telegram using their API Key and the user’s ID.",
+            "images": [],
+            "opensource": false,
+            "source": null
+        },
+        {
+            "name": "Tartare (Work in progress)",
+            "description": "Tartare is an encrypted messaging platform, it uses RSA Private/Public Key pairs to encrypt and decrypt messages on the users’ devices. No encryption/decryption is done on the servers so it’s 100% private and secure.",
+            "images": [],
+            "opensource": false,
+            "source": null
+        }
+
+    ]
+}

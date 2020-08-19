@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("head") %> 
+</head>
+<body>
+    <%- include("nav") %> 
+    <div class="container contentor">
+        <h1>About me</h1>
+        <p>I'm Ghali! I'm a programmer. <br>
+        I specialize in fullstack web development.</p>
+        <h4>Skillset</h4>
+        <% skillset.forEach(category => { %> 
+            <h5><%= category.name %></h5>
+            <ul>
+                <% category.list.forEach(element => { %>
+                    <li><%= element %> </li>
+                <% }) %>  
+            </ul>
+        <% }) %> 
+    </div>
+</body>
+</html>

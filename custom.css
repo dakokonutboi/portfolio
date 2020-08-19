@@ -1,0 +1,14 @@
+.contentor {
+    padding: 45px;
+}
+
+.images {
+    display: none;
+}
+
+.screenshot {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("head") %> 
+</head>
+<body>
+    <%- include("nav") %> 
+    <div class="container contentor">
+        <h1>My work</h1>
+        <% projects.forEach((project, index) => { %>
+            <div class="jumbotron" id="project<%= index %>">
+            <h1 class="display3"><%= project.name %></h1>
+            <% if(project.opensource) { %> 
+                <span class="badge badge-info">Open Source</span> 
+            <% }else{ %> 
+                <span class="badge badge-dark">Closed Source</span> 
+            <% } %>
+            <br>
+                <p class="lead"><%= project.description %> </p>
+                <% if(project.images.length > 0){ %>
+                    <button class="btn btn-success" id="showimagesproject<%= index %>" onclick="showScreenshots('<%= index %>')">Show screenshots</button>
+                    <div class="images" id="imagesproject<%= index %>">
+                        <button class="btn btn-danger" onclick="hideScreenshots('<%= index %>')">Hide screenshots</button>
+
+                        <% project.images.forEach(image => { %>
+                            <img class="screenshot" src="<%= image %>" alt="">
+                        <% }) %>  
+
+                        <button class="btn btn-danger" onclick="hideScreenshots('<%= index %>')">Hide screenshots</button>
+                    </div>
+                <% } %>  
+                <br><br>
+                <% if(project.opensource){ %>
+                    <a class="btn btn-info" href="<%= project.source %>">See source</a> 
+                <% } %>
+            </div>
+        <% }) %>  
+    </div>
+    <script src="/workinterface.js"></script>
+</body>
+</html>
