@@ -3,44 +3,40 @@
     {
       "name": "Programming and markup languages",
       "list": [
-        "Javascript : Advanced",
-        "Python 3 : Advanced",
-        "PHP : Advanced",
-        "HTML : Advanced",
-        "MySQL : Intermediate",
-        "bash : Intermediate",
-        "Powershell : Intermediate",
-        "CSS : Intermediate",
-        "Rust : Basic",
-        "LaTeX : Basic",
-        "C# : Basic",
-        "C++ : Basic",
-        "Basic : Basic"
+        "Javascript",
+        "Python",
+        "PHP",
+        "HTML",
+        "MySQL",
+        "bash",
+        "Powershell",
+        "CSS",
+        "Rust",
+        "LaTeX",
+        "C#",
+        "C++",
+        "Basic"
       ]
     },
     {
       "name": "Tools",
       "list": [
-        "git/versioncontrol : Advanced",
-        "GitHub : Advanced",
-        "VisualStudio Code : Advanced",
-        "Adobe Suite (Photoshop, PremierePro, AfterEffects, InDesign, MediaEncoder) : Advanced",
-        "MySQL Workbench : Intermediate",
-        "PHPMyAdmin : Intermediate",
-        "Docker : Intermediate"
+        "git/versioncontrol",
+        "GitHub",
+        "VisualStudio Code",
+        "Adobe Suite (Photoshop, PremierePro, AfterEffects, InDesign, MediaEncoder)",
+        "MySQL Workbench",
+        "PHPMyAdmin",
+        "Docker"
       ]
     },
     {
       "name": "Database systems",
-      "list": ["MongoDB : Advanced", "MySQL : Advanced"]
+      "list": ["MongoDB", "MySQL"]
     },
     {
       "name": "Cloud providers",
-      "list": [
-        "Heroku : Advanced",
-        "MongoDB Atlas : Advanced",
-        "AWS : Intermediate"
-      ]
+      "list": ["Heroku", "MongoDB Atlas", "AWS"]
     }
   ],
   "projects": [
