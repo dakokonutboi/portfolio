@@ -1,13 +1,14 @@
 {
   "skillset": [
     {
-      "name": "Programming and markup languages",
+      "name": "Programming, query and markup languages",
       "list": [
         "Javascript",
         "Python",
         "PHP",
         "HTML",
         "MySQL",
+        "PostgreSQL",
         "bash",
         "Powershell",
         "CSS",
@@ -26,13 +27,12 @@
         "VisualStudio Code",
         "Adobe Suite (Photoshop, PremierePro, AfterEffects, InDesign, MediaEncoder)",
         "MySQL Workbench",
-        "PHPMyAdmin",
         "Docker"
       ]
     },
     {
       "name": "Database systems",
-      "list": ["MongoDB", "MySQL"]
+      "list": ["MongoDB", "MySQL", "PostgreSQL"]
     },
     {
       "name": "Cloud providers",
